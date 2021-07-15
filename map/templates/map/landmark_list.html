@@ -1,0 +1,6 @@
+<h1>My Landmarks</h1>
+
+{% for landmark in all_landmarks %}
+<h2><a href="{% url 'landmark_detail' landmark.id %}">{{ landmark.name }}</a></h2>
+<p>{{ landmark.address }}</p>
+{% endfor %}
